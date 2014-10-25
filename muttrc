@@ -1,0 +1,89 @@
+auto_view text/html #自动阅读附件中的text/html
+charset-hook ^us-ascii$ gb2312 #这两行是对不正常的编码映射到gb2312
+charset-hook !UTF-8 gb2312
+# 收信设置
+macro index G "!fetchmail\r"
+macro pager G "!fetchmail\r"
+macro index H "!r2e run"
+my_hdr From: AMD-K6<ylm1982@163.com>
+my_hdr Reply-To: AMD-K6<ylm1982@163.com>
+set assumed_charset="gb2312" #对没有指明编码的邮件假设为gb2312
+set charset="UTF-8" #终端编码
+set check_new=yes #检查新邮件
+set copy=yes #这两行保存已经发送的邮件
+set edit_headers=yes
+set editor="vim" #用vim作为默认编辑器
+set fast_reply
+set folder_format="| %2C | %t %N | %8s | %d | %f"
+set header=no #回复邮件不加入原始邮件头
+set index_format="| %4C | %Z | %{%b %d} | %-15.15L | %s"
+set locale="zh_CN.UTF-8"
+set mime_forward_decode=yes
+set pager_index_lines=10
+set pager_stop #这几行是邮件显示的方式，忘了从哪里抄过来的了
+set postponed=+drafts
+set realname='沙尘暴'
+set rfc2047_parameters=yes
+set send_charset="UTF-8" #这里也可以设置为UTF-8
+set sendmail="/usr/bin/msmtp"
+set sort_aux=reverse-last-date-sent
+set sort=threads #这两行是邮件排序方法
+unignore disposition-notification-to return-receipt-to x-confirm-reading-to
+#按G键调用fdm接收邮件，和按H键调用rss2email接收Rss
+#，所以它会隐藏这些信息，unignore的作用就是 打开邮件头中被隐藏的相应的字段
+#以下一行，用以让mutt显示回执相关的文件头，因为mutt默认是不支持邮件回执的
+
+set folder=$HOME/.mail
+# set header_cache=~/.mail/.hcache
+set mbox="~/.mail/inbox"
+set mbox_type=Maildir
+set record=+sent
+set spoolfile="~/.mail/inbox"
+mailboxes "+123"
+mailboxes "+1982"
+mailboxes "+qq"
+mailboxes "+gmail"
+mailboxes ! +slrn +fetchmail +mutt
+macro index ,ty ":set pop_host=\
+\"pop://ylm1982:hanhan20110815@pop.163.com\"\r\
+<fetch-mail>"
+macro index ,tg ":set pop_host=\
+\"pop://ylm1982:11599273@pop.gmail.com\"\r\
+<fetch-mail>"
+macro index ,tm ":set pop_host=\
+\"pop://ylm1982:hanhan20110815@pop.qq.com\"\r\
+<fetch-mail>"
+macro index ,ys ":set pop_host=\
+\"pop://ylm1982123:hanhan20110815@pop.163.com\"\r\
+<fetch-mail>"
+macro index ,ta ",tm,tg,ts,ty"
+alias blog 网易博客 <blogmail@188.com>
+
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+#
+# Color definitions
+#
+
+#color normal white default
+color hdrdefault red default
+color quoted brightblue default
+color signature red default
+color indicator brightyellow red
+color error brightred default
+color status yellow blue
+color tree magenta default	# the thread tree in the index menu
+color tilde magenta default
+color message brightcyan default
+color markers brightcyan default
+color attachment brightmagenta default
+color search default green	# how to hilite search patterns in the pager
+
+color header brightred default ^(From|Subject):
+color body magenta default "(ftp|http|https)://[^ ]+"	# point out URLs
+color body magenta default [-a-z_0-9.]+@[-a-z_0-9.]+	# e-mail addresses
+color underline brightgreen default
+
+# attributes when using a mono terminal
+#mono header underline ^(From|Subject):
+mono quoted bold
+

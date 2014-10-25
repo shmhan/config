@@ -1,0 +1,5 @@
+text/html;w3m -dump %s;nametemplate=%s.html; copiousoutput
+text/html; firefox -remote openURL\(%s\)
+image/gif; xv %s
+image/jpg; xv %s
+application/pgp-keys; pgp -f < %s ; copiousoutput

@@ -1,0 +1,15 @@
+[General]
+single_click=1
+terminal=evilvte
+
+[Window]
+width=563
+height=600
+splitter_pos=197
+maximized=0
+
+[Desktop]
+wallpaper=/home/ming/myscripts/lv.jpg
+bg2=42640,46891,20640
+[Interface]
+always_show_tabs=1

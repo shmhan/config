@@ -1,0 +1,891 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openbox_menu>
+	<menu id="root-menu" label="主菜单">
+		<menu id="40" label="注销">
+			<menu id="client-list-menu"/>
+			<item label="Reconfigure">
+				<action name="Reconfigure"/>
+			</item>
+			<separator/>
+			<item label="Exit">
+				<action name="Exit"/>
+			</item>
+		</menu>
+		<separator/>
+		<menu id="100" label="程序">
+			<menu id="39" label="杂项">
+				<item label="Bugs">
+					<action name="Execute">
+						<execute>
+							xdg-open http://www.chakra-project.org/bugs/
+						</execute>
+					</action>
+				</item>
+				<item label="CMake">
+					<action name="Execute">
+						<execute>
+							cmake-gui
+						</execute>
+					</action>
+				</item>
+				<item label="Code">
+					<action name="Execute">
+						<execute>
+							xdg-open http://www.chakra-project.org/code/
+						</execute>
+					</action>
+				</item>
+				<item label="Documentation">
+					<action name="Execute">
+						<execute>
+							xdg-open http://www.chakra-project.org/wiki/
+						</execute>
+					</action>
+				</item>
+				<item label="Donate">
+					<action name="Execute">
+						<execute>
+							xdg-open http://www.chakra-project.org/donate.html
+						</execute>
+					</action>
+				</item>
+				<item label="Find Files/Folders">
+					<action name="Execute">
+						<execute>
+							kfind
+						</execute>
+					</action>
+				</item>
+				<item label="Forums">
+					<action name="Execute">
+						<execute>
+							xdg-open http://www.chakra-project.org/bbs/
+						</execute>
+					</action>
+				</item>
+				<item label="Help">
+					<action name="Execute">
+						<execute>
+							khelpcenter
+						</execute>
+					</action>
+				</item>
+				<item label="Homepage">
+					<action name="Execute">
+						<execute>
+							xdg-open http://www.chakra-project.org
+						</execute>
+					</action>
+				</item>
+				<item label="IBus Preferences">
+					<action name="Execute">
+						<execute>
+							ibus-setup
+						</execute>
+					</action>
+				</item>
+				<item label="Package ChangeLogs">
+					<action name="Execute">
+						<execute>
+							xdg-open http://chakra-project.org/code/index.php/log/packages:/
+						</execute>
+					</action>
+				</item>
+			</menu>
+			<menu id="4" label="科学">
+				<item label="Xcalc">
+					<action name="Execute">
+						<execute>
+							xcalc
+						</execute>
+					</action>
+				</item>
+			</menu>
+			<menu id="1" label="开发">
+				<item label="IDLE">
+					<action name="Execute">
+						<execute>
+							idle
+						</execute>
+					</action>
+				</item>
+				<item label="Python">
+					<action name="Execute">
+						<execute>
+							xterm -e python
+						</execute>
+					</action>
+				</item>
+			</menu>
+			<menu id="2" label="编辑器">
+				<item label="AA Fire">
+					<action name="Execute">
+						<execute>
+							xterm -e aafire -driver slang
+						</execute>
+					</action>
+				</item>
+				<item label="Kate">
+					<action name="Execute">
+						<execute>
+							kate
+						</execute>
+					</action>
+				</item>
+				<item label="Leafpad">
+					<action name="Execute">
+						<execute>
+							leafpad
+						</execute>
+					</action>
+				</item>
+				<item label="Vi">
+					<action name="Execute">
+						<execute>
+							xterm -e vi
+						</execute>
+					</action>
+				</item>
+				<item label="Vim">
+					<action name="Execute">
+						<execute>
+							xterm -e vim
+						</execute>
+					</action>
+				</item>
+				<item label="Xedit">
+					<action name="Execute">
+						<execute>
+							xedit
+						</execute>
+					</action>
+				</item>
+			</menu>
+			<menu id="18" label="游戏">
+				<menu id="17" label="Amusement">
+					<item label="Xeyes">
+						<action name="Execute">
+							<execute>
+								xeyes
+							</execute>
+						</action>
+					</item>
+				</menu>
+				<menu id="10" label="Arcade">
+					<item label="PacMan">
+						<action name="Execute">
+							<execute>
+								pacman
+							</execute>
+						</action>
+					</item>
+				</menu>
+			</menu>
+			<menu id="19" label="终端">
+				<item label="Dash">
+					<action name="Execute">
+						<execute>
+							xterm -e dash -i
+						</execute>
+					</action>
+				</item>
+				<item label="Dolphin">
+					<action name="Execute">
+						<execute>
+							dolphin
+						</execute>
+					</action>
+				</item>
+				<item label="urxvt">
+					<action name="Execute">
+						<execute>
+							urxvt
+						</execute>
+					</action>
+				</item>
+				<item label="File Manager">
+					<action name="Execute">
+						<execute>
+							pcmanfm
+						</execute>
+					</action>
+				</item>
+				<item label="GIT">
+					<action name="Execute">
+						<execute>
+							xterm -e git
+						</execute>
+					</action>
+				</item>
+				<item label="Konsole">
+					<action name="Execute">
+						<execute>
+							konsole
+						</execute>
+					</action>
+				</item>
+				<item label="ROX">
+					<action name="Execute">
+						<execute>
+							rox
+						</execute>
+					</action>
+				</item>
+				<item label="Tilda">
+					<action name="Execute">
+						<execute>
+							tilda
+						</execute>
+					</action>
+				</item>
+				<item label="Xterm">
+					<action name="Execute">
+						<execute>
+							xterm
+						</execute>
+					</action>
+				</item>
+			</menu>
+			<menu id="5" label="网络">
+				<item label="Akregator">
+					<action name="Execute">
+						<execute>
+							akregator
+						</execute>
+					</action>
+				</item>
+				<item label="Avahi SSH Server Browser">
+					<action name="Execute">
+						<execute>
+							bssh
+						</execute>
+					</action>
+				</item>
+				<item label="Avahi VNC Server Browser">
+					<action name="Execute">
+						<execute>
+							bvnc
+						</execute>
+					</action>
+				</item>
+				<item label="Blogilo">
+					<action name="Execute">
+						<execute>
+							blogilo
+						</execute>
+					</action>
+				</item>
+				<item label="KGet">
+					<action name="Execute">
+						<execute>
+							kget
+						</execute>
+					</action>
+				</item>
+				<item label="KMail">
+					<action name="Execute">
+						<execute>
+							kmail
+						</execute>
+					</action>
+				</item>
+				<item label="Konqueror">
+					<action name="Execute">
+						<execute>
+							kfmclient openProfile webbrowsing
+						</execute>
+					</action>
+				</item>
+				<item label="Kopete">
+					<action name="Execute">
+						<execute>
+							kopete
+						</execute>
+					</action>
+				</item>
+				<item label="PCMan X BBS Client">
+					<action name="Execute">
+						<execute>
+							pcmanx
+						</execute>
+					</action>
+				</item>
+				<item label="TkVNC">
+					<action name="Execute">
+						<execute>
+							xterm -e tkvnc
+						</execute>
+					</action>
+				</item>
+				<item label="W3m">
+					<action name="Execute">
+						<execute>
+							xterm -e w3m
+						</execute>
+					</action>
+				</item>
+				<item label="Xbiff">
+					<action name="Execute">
+						<execute>
+							xbiff
+						</execute>
+					</action>
+				</item>
+			</menu>
+			<menu id="38" label="工具">
+				<item label="Akonaditray">
+					<action name="Execute">
+						<execute>
+							akonaditray
+						</execute>
+					</action>
+				</item>
+				<item label="Ark">
+					<action name="Execute">
+						<execute>
+							ark
+						</execute>
+					</action>
+				</item>
+				<item label="Editres">
+					<action name="Execute">
+						<execute>
+							editres
+						</execute>
+					</action>
+				</item>
+				<item label="Info">
+					<action name="Execute">
+						<execute>
+							xterm -e info
+						</execute>
+					</action>
+				</item>
+				<item label="KCalc">
+					<action name="Execute">
+						<execute>
+							kcalc
+						</execute>
+					</action>
+				</item>
+				<item label="KCharSelect">
+					<action name="Execute">
+						<execute>
+							kcharselect
+						</execute>
+					</action>
+				</item>
+				<item label="KGpg">
+					<action name="Execute">
+						<execute>
+							kgpg
+						</execute>
+					</action>
+				</item>
+				<item label="Kleopatra">
+					<action name="Execute">
+						<execute>
+							kleopatra
+						</execute>
+					</action>
+				</item>
+				<item label="Klipper">
+					<action name="Execute">
+						<execute>
+							klipper
+						</execute>
+					</action>
+				</item>
+				<item label="KNotes">
+					<action name="Execute">
+						<execute>
+							knotes
+						</execute>
+					</action>
+				</item>
+				<item label="Oclock">
+					<action name="Execute">
+						<execute>
+							oclock
+						</execute>
+					</action>
+				</item>
+				<item label="Viewres">
+					<action name="Execute">
+						<execute>
+							viewres
+						</execute>
+					</action>
+				</item>
+				<item label="Xarchiver">
+					<action name="Execute">
+						<execute>
+							xarchiver
+						</execute>
+					</action>
+				</item>
+				<item label="Xclipboard">
+					<action name="Execute">
+						<execute>
+							xclipboard
+						</execute>
+					</action>
+				</item>
+				<item label="Xclock (analog)">
+					<action name="Execute">
+						<execute>
+							xclock -analog
+						</execute>
+					</action>
+				</item>
+				<item label="Xclock (digital)">
+					<action name="Execute">
+						<execute>
+							xclock -digital
+						</execute>
+					</action>
+				</item>
+				<item label="Xclock (digital)">
+					<action name="Execute">
+						<execute>
+							xclock -digital -update 1
+						</execute>
+					</action>
+				</item>
+				<item label="Xcutsel">
+					<action name="Execute">
+						<execute>
+							xcutsel
+						</execute>
+					</action>
+				</item>
+				<item label="Xev">
+					<action name="Execute">
+						<execute>
+							xterm -e xev
+						</execute>
+					</action>
+				</item>
+				<item label="XFontSel">
+					<action name="Execute">
+						<execute>
+							xfontsel
+						</execute>
+					</action>
+				</item>
+				<item label="Xkill">
+					<action name="Execute">
+						<execute>
+							xkill
+						</execute>
+					</action>
+				</item>
+				<item label="Xlogo">
+					<action name="Execute">
+						<execute>
+							xlogo
+						</execute>
+					</action>
+				</item>
+				<item label="Xmag">
+					<action name="Execute">
+						<execute>
+							xmag
+						</execute>
+					</action>
+				</item>
+				<item label="Xman">
+					<action name="Execute">
+						<execute>
+							xman
+						</execute>
+					</action>
+				</item>
+				<item label="Xrefresh">
+					<action name="Execute">
+						<execute>
+							xrefresh
+						</execute>
+					</action>
+				</item>
+				<item label="Xsetroot">
+					<action name="Execute">
+						<execute>
+							xsetroot
+						</execute>
+					</action>
+				</item>
+			</menu>
+			<menu id="3" label="办公">
+				<item label="Evince">
+					<action name="Execute">
+						<execute>
+							evince
+						</execute>
+					</action>
+				</item>
+				<item label="FreeMind">
+					<action name="Execute">
+						<execute>
+							freemind
+						</execute>
+					</action>
+				</item>
+				<item label="KAddressBook">
+					<action name="Execute">
+						<execute>
+							kaddressbook
+						</execute>
+					</action>
+				</item>
+				<item label="KOrganizer">
+					<action name="Execute">
+						<execute>
+							korganizer
+						</execute>
+					</action>
+				</item>
+				<item label="Okular">
+					<action name="Execute">
+						<execute>
+							okular
+						</execute>
+					</action>
+				</item>
+				<item label="StarDict">
+					<action name="Execute">
+						<execute>
+							stardict
+						</execute>
+					</action>
+				</item>
+				<item label="Xgnokii">
+					<action name="Execute">
+						<execute>
+							xgnokii
+						</execute>
+					</action>
+				</item>
+			</menu>
+			<menu id="6" label="图像">
+				<item label="Geeqie">
+					<action name="Execute">
+						<execute>
+							geeqie
+						</execute>
+					</action>
+				</item>
+				<item label="GNU Image Manipulation Program">
+					<action name="Execute">
+						<execute>
+							gimp-2.6
+						</execute>
+					</action>
+				</item>
+				<item label="Gwenview">
+					<action name="Execute">
+						<execute>
+							gwenview
+						</execute>
+					</action>
+				</item>
+				<item label="KColorChooser">
+					<action name="Execute">
+						<execute>
+							kcolorchooser
+						</execute>
+					</action>
+				</item>
+				<item label="KRuler">
+					<action name="Execute">
+						<execute>
+							kruler
+						</execute>
+					</action>
+				</item>
+				<item label="KSnapshot">
+					<action name="Execute">
+						<execute>
+							ksnapshot
+						</execute>
+					</action>
+				</item>
+				<item label="scanimage">
+					<action name="Execute">
+						<execute>
+							xterm -e scanimage
+						</execute>
+					</action>
+				</item>
+				<item label="The GIMP">
+					<action name="Execute">
+						<execute>
+							gimp
+						</execute>
+					</action>
+				</item>
+				<item label="XGlyph">
+					<action name="Execute">
+						<execute>
+							xglyph
+						</execute>
+					</action>
+				</item>
+			</menu>
+			<menu id="7" label="多媒体">
+				<item label="ALSA mixer">
+					<action name="Execute">
+						<execute>
+							xterm -e alsamixer
+						</execute>
+					</action>
+				</item>
+				<item label="Dragon Player">
+					<action name="Execute">
+						<execute>
+							dragon
+						</execute>
+					</action>
+				</item>
+				<item label="KMix">
+					<action name="Execute">
+						<execute>
+							kmix
+						</execute>
+					</action>
+				</item>
+				<item label="KsCD">
+					<action name="Execute">
+						<execute>
+							kscd
+						</execute>
+					</action>
+				</item>
+				<item label="Movie Player">
+					<action name="Execute">
+						<execute>
+							totem
+						</execute>
+					</action>
+				</item>
+				<item label="VLC media player">
+					<action name="Execute">
+						<execute>
+							vlc
+						</execute>
+					</action>
+				</item>
+			</menu>
+			<menu id="37" label="系统">
+				<menu id="36" label="设置">
+					<menu id="21" label="GNOME">
+						<item label="Touchpad">
+							<action name="Execute">
+								<execute>
+									gsynaptics
+								</execute>
+							</action>
+						</item>
+					</menu>
+					<item label="Appearance">
+						<action name="Execute">
+							<execute>
+								lxappearance
+							</execute>
+						</action>
+					</item>
+					<item label="Openbox Configuration Manager">
+						<action name="Execute">
+							<execute>
+								obconf
+							</execute>
+						</action>
+					</item>
+					<item label="Panel tint2">
+						<action name="Execute">
+							<execute>
+								tint2conf
+							</execute>
+						</action>
+					</item>
+					<item label="Preferred Applications">
+						<action name="Execute">
+							<execute>
+								libfm-pref-apps
+							</execute>
+						</action>
+					</item>
+					<item label="Qt Config">
+						<action name="Execute">
+							<execute>
+								qtconfig
+							</execute>
+						</action>
+					</item>
+					<item label="System Settings">
+						<action name="Execute">
+							<execute>
+								systemsettings
+							</execute>
+						</action>
+					</item>
+					<item label="Xvidtune">
+						<action name="Execute">
+							<execute>
+								xvidtune
+							</execute>
+						</action>
+					</item>
+				</menu>
+				<item label="Avahi Zeroconf Browser">
+					<action name="Execute">
+						<execute>
+							avahi-discover
+						</execute>
+					</action>
+				</item>
+				<item label="Disk Utility">
+					<action name="Execute">
+						<execute>
+							palimpsest
+						</execute>
+					</action>
+				</item>
+				<item label="IBus">
+					<action name="Execute">
+						<execute>
+							ibus-daemon --xim
+						</execute>
+					</action>
+				</item>
+				<item label="KGRUBEditor">
+					<action name="Execute">
+						<execute>
+							kcmshell4 kgrubeditor
+						</execute>
+					</action>
+				</item>
+				<item label="KInfoCenter">
+					<action name="Execute">
+						<execute>
+							kinfocenter
+						</execute>
+					</action>
+				</item>
+				<item label="KNetworkManager">
+					<action name="Execute">
+						<execute>
+							knetworkmanager
+						</execute>
+					</action>
+				</item>
+				<item label="KRandRTray">
+					<action name="Execute">
+						<execute>
+							krandrtray
+						</execute>
+					</action>
+				</item>
+				<item label="KWalletManager">
+					<action name="Execute">
+						<execute>
+							kwalletmanager
+						</execute>
+					</action>
+				</item>
+				<item label="miniBackup">
+					<action name="Execute">
+						<execute>
+							kdemod-backup
+						</execute>
+					</action>
+				</item>
+				<item label="pstree">
+					<action name="Execute">
+						<execute>
+							xterm -e /usr/bin/pstree.x11
+						</execute>
+					</action>
+				</item>
+				<item label="pstree">
+					<action name="Execute">
+						<execute>
+							xterm -e pstree
+						</execute>
+					</action>
+				</item>
+				<item label="pstree">
+					<action name="Execute">
+						<execute>
+							xterm -e pstree.x11
+						</execute>
+					</action>
+				</item>
+				<item label="Shaman">
+					<action name="Execute">
+						<execute>
+							shaman
+						</execute>
+					</action>
+				</item>
+				<item label="System Monitor">
+					<action name="Execute">
+						<execute>
+							ksysguard
+						</execute>
+					</action>
+				</item>
+				<item label="Top">
+					<action name="Execute">
+						<execute>
+							xterm -e top
+						</execute>
+					</action>
+				</item>
+				<item label="Xconsole">
+					<action name="Execute">
+						<execute>
+							xconsole
+						</execute>
+					</action>
+				</item>
+				<item label="XLoad">
+					<action name="Execute">
+						<execute>
+							xload
+						</execute>
+					</action>
+				</item>
+			</menu>
+		</menu>
+		<separator/>
+		<item label="网上冲浪">
+			<action name="Execute">
+				<execute>
+					chromium
+				</execute>
+			</action>
+		</item>
+		<item label="五维书屋">
+			<action name="Execute">
+				<execute>
+					chromium
+				</execute>
+			</action>
+		</item>
+		<item label="文件浏览">
+			<action name="Execute">
+				<execute>
+					pcmanfm
+				</execute>
+			</action>
+		</item>
+		<item label="星际译王">
+			<action name="Execute">
+				<execute>
+					stardict
+				</execute>
+			</action>
+		</item>
+	</menu>
+</openbox_menu>

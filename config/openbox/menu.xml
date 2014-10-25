@@ -1,0 +1,436 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openbox_menu>
+	<menu id="root-menu" label="OpenBox 3">
+		<menu id="1" label="开发环境">
+			<item label="IDLE">
+				<action name="Execute">
+					<execute>
+						idle
+					</execute>
+				</action>
+			</item>
+			<item label="Python">
+				<action name="Execute">
+					<execute>
+						xterm -e python
+					</execute>
+				</action>
+			</item>
+		</menu>
+		<menu id="2" label="编辑器">
+			<item label="vim">
+				<action name="Execute">
+					<execute>
+						xterm -e vim
+					</execute>
+				</action>
+			</item>
+			<item label="Leafpad">
+				<action name="Execute">
+					<execute>
+						leafpad
+					</execute>
+				</action>
+			</item>
+			<item label="Vi">
+				<action name="Execute">
+					<execute>
+						xterm -e vi
+					</execute>
+				</action>
+			</item>
+			<item label="Vim">
+				<action name="Execute">
+					<execute>
+						xterm -e vim
+					</execute>
+				</action>
+			</item>
+		</menu>
+		<menu id="18" label="游戏">
+			<menu id="10" label="更新走廊">
+				<item label="PacMan">
+					<action name="Execute">
+						<execute>
+							pacman
+						</execute>
+					</action>
+				</item>
+			</menu>
+		</menu>
+		<menu id="6" label="图形">
+			<item label="gThumb">
+				<action name="Execute">
+					<execute>
+						gthumb
+					</execute>
+				</action>
+			</item>
+			<item label="XGlyph">
+				<action name="Execute">
+					<execute>
+						xglyph
+					</execute>
+				</action>
+			</item>
+			<item label="xgps">
+				<action name="Execute">
+					<execute>
+						xgps
+					</execute>
+				</action>
+			</item>
+			<item label="xgpsspeed">
+				<action name="Execute">
+					<execute>
+						xgpsspeed
+					</execute>
+				</action>
+			</item>
+		</menu>
+		<menu id="7" label="多媒体">
+			<item label="音量调节">
+				<action name="Execute">
+					<execute>
+						xterm -e alsamixer
+					</execute>
+				</action>
+			</item>
+			<item label="OSD Lyrics">
+				<action name="Execute">
+					<execute>
+						osd-lyrics
+					</execute>
+				</action>
+			</item>
+			<item label="xine">
+				<action name="Execute">
+					<execute>
+						xine
+					</execute>
+				</action>
+			</item>
+		</menu>
+		<menu id="5" label="因特网">
+			<item label="Avahi SSH Server Browser">
+				<action name="Execute">
+					<execute>
+						bssh
+					</execute>
+				</action>
+			</item>
+			<item label="Avahi VNC Server Browser">
+				<action name="Execute">
+					<execute>
+						bvnc
+					</execute>
+				</action>
+			</item>
+			<item label="Chromium">
+				<action name="Execute">
+					<execute>
+						chromium
+					</execute>
+				</action>
+			</item>
+			<item label="FireFox">
+				<action name="Execute">
+					<execute>
+						firefox
+					</execute>
+				</action>
+			</item>
+			<item label="TkVNC">
+				<action name="Execute">
+					<execute>
+						xterm -e tkvnc
+					</execute>
+				</action>
+			</item>
+			<item label="W3m">
+				<action name="Execute">
+					<execute>
+						xterm -e w3m
+					</execute>
+				</action>
+			</item>
+			<item label="w3m">
+				<action name="Execute">
+					<execute>
+						xterm -e w3m /usr/share/doc/w3m/MANUAL.html
+					</execute>
+				</action>
+			</item>
+		</menu>
+		<menu id="3" label="阅读">
+			<item label="AbiWord">
+				<action name="Execute">
+					<execute>
+						abiword
+					</execute>
+				</action>
+			</item>
+			<item label="E-book reader">
+				<action name="Execute">
+					<execute>
+						FBReader
+					</execute>
+				</action>
+			</item>
+			<item label="Evince">
+				<action name="Execute">
+					<execute>
+						evince
+					</execute>
+				</action>
+			</item>
+			<item label="FreeMind">
+				<action name="Execute">
+					<execute>
+						freemind
+					</execute>
+				</action>
+			</item>
+			<item label="StarDict">
+				<action name="Execute">
+					<execute>
+						stardict
+					</execute>
+				</action>
+			</item>
+		</menu>
+		<menu id="39" label="其他">
+			<item label="CMake">
+				<action name="Execute">
+					<execute>
+						cmake-gui
+					</execute>
+				</action>
+			</item>
+		</menu>
+		<menu id="19" label="终端">
+			<item label="Dash">
+				<action name="Execute">
+					<execute>
+						xterm -e dash -i
+					</execute>
+				</action>
+			</item>
+			<item label="File Manager">
+				<action name="Execute">
+					<execute>
+						pcmanfm
+					</execute>
+				</action>
+			</item>
+			<item label="GIT">
+				<action name="Execute">
+					<execute>
+						xterm -e git
+					</execute>
+				</action>
+			</item>
+			<item label="Tilda">
+				<action name="Execute">
+					<execute>
+						tilda
+					</execute>
+				</action>
+			</item>
+			<item label="Xterm">
+				<action name="Execute">
+					<execute>
+						urxvt
+					</execute>
+				</action>
+			</item>
+			<item label="XTerm (Unicode)">
+				<action name="Execute">
+					<execute>
+						uxterm
+					</execute>
+				</action>
+			</item>
+		</menu>
+		<menu id="37" label="系统">
+			<menu id="36" label="设置">
+				<menu id="21" label="GNOME">
+					<item label="Adobe Flash Player">
+						<action name="Execute">
+							<execute>
+								flash-player-properties
+							</execute>
+						</action>
+					</item>
+				</menu>
+				<item label="Customize Look and Feel">
+					<action name="Execute">
+						<execute>
+							lxappearance
+						</execute>
+					</action>
+				</item>
+				<item label="Openbox Configuration Manager">
+					<action name="Execute">
+						<execute>
+							obconf
+						</execute>
+					</action>
+				</item>
+				<item label="Panel tint2">
+					<action name="Execute">
+						<execute>
+							tint2conf
+						</execute>
+					</action>
+				</item>
+				<item label="Preferred Applications">
+					<action name="Execute">
+						<execute>
+							libfm-pref-apps
+						</execute>
+					</action>
+				</item>
+			</menu>
+			<item label="Avahi Zeroconf Browser">
+				<action name="Execute">
+					<execute>
+						avahi-discover
+					</execute>
+				</action>
+			</item>
+			<item label="Imlib Config">
+				<action name="Execute">
+					<execute>
+						imlib_config
+					</execute>
+				</action>
+			</item>
+			<item label="pstree">
+				<action name="Execute">
+					<execute>
+						xterm -e /usr/bin/pstree.x11
+					</execute>
+				</action>
+			</item>
+			<item label="pstree">
+				<action name="Execute">
+					<execute>
+						xterm -e pstree
+					</execute>
+				</action>
+			</item>
+			<item label="pstree">
+				<action name="Execute">
+					<execute>
+						xterm -e pstree.x11
+					</execute>
+				</action>
+			</item>
+			<item label="Top">
+				<action name="Execute">
+					<execute>
+						xterm -e top
+					</execute>
+				</action>
+			</item>
+		</menu>
+		<menu id="38" label="小部件">
+			<item label="Calculator">
+				<action name="Execute">
+					<execute>
+						gcalctool
+					</execute>
+				</action>
+			</item>
+			<item label="Character Map">
+				<action name="Execute">
+					<execute>
+						gucharmap
+					</execute>
+				</action>
+			</item>
+			<item label="Easystroke Gesture Recognition">
+				<action name="Execute">
+					<execute>
+						easystroke
+					</execute>
+				</action>
+			</item>
+			<item label="Editres">
+				<action name="Execute">
+					<execute>
+						editres
+					</execute>
+				</action>
+			</item>
+			<item label="Help">
+				<action name="Execute">
+					<execute>
+						yelp
+					</execute>
+				</action>
+			</item>
+			<item label="Info">
+				<action name="Execute">
+					<execute>
+						xterm -e info
+					</execute>
+				</action>
+			</item>
+			<item label="Tweak Advanced Settings">
+				<action name="Execute">
+					<execute>
+						gnome-tweak-tool
+					</execute>
+				</action>
+			</item>
+			<item label="Viewres">
+				<action name="Execute">
+					<execute>
+						viewres
+					</execute>
+				</action>
+			</item>
+			<item label="Xarchiver">
+				<action name="Execute">
+					<execute>
+						xarchiver
+					</execute>
+				</action>
+			</item>
+			<item label="Xev">
+				<action name="Execute">
+					<execute>
+						xterm -e xev
+					</execute>
+				</action>
+			</item>
+			<item label="Xrefresh">
+				<action name="Execute">
+					<execute>
+						xrefresh
+					</execute>
+				</action>
+			</item>
+			<item label="Xsetroot">
+				<action name="Execute">
+					<execute>
+						xsetroot
+					</execute>
+				</action>
+			</item>
+		</menu>
+		<separator/>
+		<menu id="40" label="注销">
+			<menu id="client-list-menu"/>
+			<item label="Reconfigure">
+				<action name="Reconfigure"/>
+			</item>
+			<separator/>
+			<item label="注销">
+				<action name="Exit"/>
+			</item>
+		</menu>
+	</menu>
+</openbox_menu>
