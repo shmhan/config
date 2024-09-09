@@ -1,0 +1,18 @@
+# Title: StevenBlack/hosts
+#
+# This hosts file is a merged collection of hosts from reputable sources,
+# with a dash of crowd sourcing via GitHub
+#
+# Date: 07 September 2024 01:55:35 (UTC)
+# Number of unique domains: 177,109
+#
+# Fetch the latest version of this file: https://raw.githubusercontent.com/StevenBlack/hosts/master/hosts
+# Project home page: https://github.com/StevenBlack/hosts
+# Project releases: https://github.com/StevenBlack/hosts/releases
+#
+# ==============================================================
+
+127.0.0.1 lm.local
+127.0.0.1 localhost
+127.0.0.1 localhost.localdomain
+127.0.0.1 local
